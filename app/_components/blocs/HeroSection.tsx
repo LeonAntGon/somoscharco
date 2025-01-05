@@ -9,8 +9,10 @@ const HeroSection: React.FC = () => {
             <div className="my-auto">
                 <h1 className='text-white'>Titulo h1</h1>
                 <h2 className='text-white'>Titulo h2</h2>
-                <CardXp/>
+                
                 <p className='text-white'>CTA</p>
+
+                <CardXp/>
             </div>
             <div className="">
                 <HeroVideo/>

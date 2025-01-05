@@ -11,11 +11,11 @@ const CardXp = () => {
         <div className="card">
           <div className="ray" />
           <div><p className='text-sm font-semibold'>Más de</p></div>
-            <p className="inline whitespace-pre-wrap text text-4xl font-medium tracking-tighter text-white mx-2">
+            <p className="inline whitespace-pre-wrap text text-2xl font-medium tracking-tighter text-white mx-2">
                 <NumberTicker value={30} />
             </p>
             
-            <p className='text-sm font-semibold'><span className='text-md'> años</span> en el mercado</p>
+            <p className='text-sm font-semibold'><span className='text-xs'> años</span> en el mercado</p>
           <div className="line topl" />
           <div className="line leftl" />
           <div className="line bottoml" />
@@ -28,8 +28,8 @@ const CardXp = () => {
 
 const StyledWrapper = styled.div`
   .outer {
-    width: 200px;
-    height: 160px;
+    width: 160px;
+    height: 120px;
     border-radius: 10px;
     padding: 1px;
     background: radial-gradient(circle 230px at 0% 0%, #ffffff, #0c0d0d);
@@ -37,7 +37,7 @@ const StyledWrapper = styled.div`
   }
 
   .dot {
-    width: 5px;
+    width: 3.5px;
     aspect-ratio: 1;
     position: absolute;
     background-color: #fff;
@@ -57,11 +57,11 @@ const StyledWrapper = styled.div`
     }
     25% {
       top: 10%;
-      right: calc(100% - 35px);
+      right: calc(100% - 15px);
     }
     50% {
       top: calc(100% - 20px);
-      right: calc(100% - 35px);
+      right: calc(100% - 15px);
     }
     75% {
       top: calc(100% - 20px);
@@ -85,7 +85,7 @@ const StyledWrapper = styled.div`
     color: #fff;
   }
   .ray {
-    width: 220px;
+    width: 160px;
     height: 45px;
     border-radius: 100px;
     position: absolute;
