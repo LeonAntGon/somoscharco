@@ -17,7 +17,7 @@ const AboutSomos: React.FC = () => {
   return (
     <div
       ref={ref}
-      className="mt-[-60vh] h-[90vh] overflow-hidden"
+      className=" mt-[-70vh] md:mt-[-60vh] h-[90vh] overflow-hidden"
       style={{
         backgroundImage: `url(${bgWaves.src})`,
         backgroundSize: 'cover',
@@ -25,7 +25,7 @@ const AboutSomos: React.FC = () => {
       }}
     > 
       <motion.div
-        className='pt-[30vh] px-[140px]'
+        className='pt-[30vh] px-[40px] md:px-[140px]'
         initial={{ x: '-50vh', opacity: 0 }}
         animate={{ x: isInView ? 0 : '50vh', opacity: isInView ? 1 : 0 }}
         transition={{ duration: 3 }}
@@ -36,7 +36,7 @@ const AboutSomos: React.FC = () => {
         </p>
       </motion.div>
       <motion.div
-        className='mt-[5vh] px-[130px]'
+        className='mt-[5vh] px-[40px] md:px-[130px]'
         initial={{ x: '50vh', opacity: 0 }}
         animate={{ x: isInView ? 0 : '50vh', opacity: isInView ? 1 : 0 }}
         transition={{ duration: 2, delay: 2 }}
