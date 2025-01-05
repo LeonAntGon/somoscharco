@@ -12,7 +12,7 @@ const CardXp = () => {
           <div className="ray" />
           <div><p className='text-sm font-semibold'>Más de</p></div>
             <p className="inline whitespace-pre-wrap text text-2xl font-medium tracking-tighter text-white mx-2">
-                <NumberTicker value={30} />
+                +<NumberTicker value={30} />
             </p>
             
             <p className='text-sm font-semibold'><span className='text-xs'> años</span> en el mercado</p>

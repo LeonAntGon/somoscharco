@@ -23,31 +23,24 @@ export default function ContactoComponent() {
   }
 
   return (
-    <section className="min-h-screen bg-gradient-to-b from-primary/20 to-background py-12 ">
-      <motion.div 
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
+    <section className="min-h-screen bg-gradient-to-b from-primary/20 to-background py-6 ">
+      <div 
         className="max-w-7xl mx-auto"
       >
         <WarpBg/>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12 px-4 lg:px-6">
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-          >
-            <Card className="h-full bg-white">
+          <div className="opacity-100 x-0">
+            <Card className="h-full bg-white px-4">
               <CardHeader>
-                <CardTitle className="text-2xl">Información de Contacto</CardTitle>
+                <CardTitle className="text-2xl text-black">Información de Contacto</CardTitle>
               </CardHeader>
               <CardContent className="space-y-6">
                 <motion.div whileHover={{ scale: 1.05 }} className="flex items-center space-x-3">
                   <PhoneIcon className="text-[#5885d5] h-5 w-5 dark:text-gray-50" />
                   <div>
-                    <p className="font-semibold">Teléfono</p>
-                    <p className="text-gray-500 dark:text-gray-400">+54 9 11 3602 9188</p>
+                    <p className="font-semibold text-gray-500">Teléfono</p>
+                    <p className="text-gray-500">+54 9 11 3602 9188</p>
                   </div>
                 </motion.div>
                 
@@ -61,16 +54,12 @@ export default function ContactoComponent() {
                 </motion.div>
               </CardContent>
             </Card>
-          </motion.div>
+          </div>
           
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-          >
+          <div className="opacity-100 x-0">
             <Card className="h-full bg-white">
               <CardHeader>
-                <CardTitle className="text-2xl">Envíenos un Mensaje</CardTitle>
+                <CardTitle className="text-2xl text-black">Envíenos un Mensaje</CardTitle>
               </CardHeader>
               <CardContent>
                 <form onSubmit={handleSubmit} className="space-y-4">
@@ -106,10 +95,10 @@ export default function ContactoComponent() {
                 </form>
               </CardContent>
             </Card>
-          </motion.div>
+          </div>
         </div>
         
-      </motion.div>
+      </div>
     </section>
   )
 }

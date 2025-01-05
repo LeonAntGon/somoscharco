@@ -8,7 +8,7 @@ import {
 
 export default function WarpBg() {
   return (
-    <div className="bg-black w-full py-8 px-8">
+    <div className="bg-black w-full py-6 px-8 my-6 rounded-lg shadow-lg">
         <WarpBackground>
         <Card className="max-w-[400px] mx-auto">
 
