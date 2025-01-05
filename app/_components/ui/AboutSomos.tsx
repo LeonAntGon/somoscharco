@@ -26,8 +26,8 @@ const AboutSomos: React.FC = () => {
     > 
       <motion.div
         className='pt-[30vh] px-[40px] md:px-[140px]'
-        initial={{ x: '-50vh', opacity: 0 }}
-        animate={{ x: isInView ? 0 : '50vh', opacity: isInView ? 1 : 0 }}
+        initial={{ x: '-30vh', opacity: 0 }}
+        animate={{ x: isInView ? 0 : '-30vh', opacity: isInView ? 1 : 0 }}
         transition={{ duration: 3 }}
       >
         <p className='text-white text-center text-md'>
@@ -37,8 +37,8 @@ const AboutSomos: React.FC = () => {
       </motion.div>
       <motion.div
         className='mt-[5vh] px-[40px] md:px-[130px]'
-        initial={{ x: '50vh', opacity: 0 }}
-        animate={{ x: isInView ? 0 : '50vh', opacity: isInView ? 1 : 0 }}
+        initial={{ x: '30vh', opacity: 0 }}
+        animate={{ x: isInView ? 0 : '30vh', opacity: isInView ? 1 : 0 }}
         transition={{ duration: 2, delay: 2 }}
       >
         <p className='text-white text-center'>
