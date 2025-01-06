@@ -74,7 +74,10 @@ export default {
   			'shimmer-slide': 'shimmer-slide var(--speed) ease-in-out infinite alternate',
   			'spin-around': 'spin-around calc(var(--speed) * 2) infinite linear',
   			meteor: 'meteor 5s linear infinite'
-  		}
+  		},
+  		screens: {
+  			xs: '480px',
+  		},
   	}
   },
   plugins: [require("tailwindcss-animate")],

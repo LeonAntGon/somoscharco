@@ -7,11 +7,11 @@ function Experience() {
   return (
     <section className='mt-[120px]' id='experiencia'>
       <GradualSpacing
-        className="md:hidden text-center text-md font-bold -tracking-widest  text-black dark:text-white md:text-2xl"
+        className="md:hidden text-center text-xs sm:text-md font-bold -tracking-widest text-black dark:text-white md:text-2xl"
         text="Tres generaciones de experiencia"
       />
       <GradualSpacingDelayed
-      className="md:hidden text-center text-md font-bold -tracking-widest  text-black dark:text-white md:text-2xl"
+      className="md:hidden text-center text-xs sm:text-md font-bold -tracking-widest text-black dark:text-white md:text-2xl"
       text="en Argentina, Chile y Uruguay"
     />
 
