@@ -8,7 +8,8 @@ export default function Somos() {
     style={{
       boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
       maskImage: 'linear-gradient(black 95%, transparent)'
-    }}>
+    }}
+    id="somos">
         <div className="z-10 flex min-h-64 items-center justify-center rounded-lg">
             <TextRevealByWord text="Somos Charco" />
         </div>

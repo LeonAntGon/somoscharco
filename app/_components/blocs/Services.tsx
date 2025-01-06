@@ -9,7 +9,7 @@ import Intervenciones from "@/public/assets/icons/Iconos-charco-intervenciones-p
 
 function Services() {
   return (
-    <section className='my-8'>
+    <section className='my-8' id="servicios">
       <div className=''>
         <h3 className='text-center text-4xl font-semibold mt-8 mb-6'>Nuestros servicios</h3>
         <p className='text-center text-gray-500 text-lg'>Trabajamos intensamente para dar a nuestros clientes el todo. Ejecutamos lo que creamos y diseñamos.</p>

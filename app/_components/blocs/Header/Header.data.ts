@@ -9,7 +9,7 @@ export const dataHeader: HeaderData[] = [
   {
     id: 2,
     name: "Somos",
-    link: "#Somos",
+    link: "#somos",
   },
   {
     id: 3,

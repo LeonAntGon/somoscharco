@@ -7,7 +7,6 @@ import Image from "next/image"
 import Hamburguer from "../../widgets/Hamburguer"
 import { useState, useEffect } from "react"
 import { Navbar } from "@/app/_components/widgets/Navbar/Index";
-import { HeaderData } from "./Header.types";
 import LinkNavBar from "@/components/ui/LinksNavBar"
 
 export function Header() {
@@ -64,6 +63,7 @@ export function Header() {
                     
                     <LinkNavBar 
                         menuItems={dataHeader.map(({ name, link }) => ({ text: name, href: link }))}
+                        onLinkClick={() => setOpenMobileMenu(false)}
                     />
                 </nav>
                 
