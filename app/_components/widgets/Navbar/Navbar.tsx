@@ -34,11 +34,11 @@ export function Navbar( props: NavbarProps) {
                 exit="exit"
                 className="pl-auto mx-auto md:fixed z-[9999] right-0 left-0 px-6 py-4 text-white bg-gray-400/40 top-10 rounded-3xl backdrop-blur-0 w-fit"
                 >
-                    <div className="items-center  gap-5 sm:flex">
+                    <nav className="items-center  gap-5 sm:flex">
                         {dataHeader.map(({ id, name, link}) =>(
                             <Link key={id} href={link} className="hover:text-[#0e4597] hover:border-b-[1px] hover:border-[#0e4597] transition duration-300">{name}</Link>
                         ))}
-                    </div>
+                    </nav>
                 </motion.nav>
             ) : (
                 <div className={`${openMobileMenu ? 'absolute z-[1] left-0 top-20 bg-black r-0 w-full px-4 py-4' : 'hidden'} gap-5 sm:flex`}>

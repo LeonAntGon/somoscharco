@@ -1,20 +1,32 @@
 "use client"
-import { CiMenuFries,} from "react-icons/ci"
-import { BsTelephone } from "react-icons/bs"
 import Link from "next/link"
-import { useEffect, useState } from "react"
-import { Navbar } from "@/app/_components/widgets/Navbar/Index";
+import { dataHeader } from "../../blocs/Header/Header.data"
 import ShimmerButton from "@/components/ui/magicUi/shimmer-button"
 import Logo from "@/public/assets/cropped-Logo-Somos-Charco-Blanco-Azul-1.png"
 import Image from "next/image"
 import Hamburguer from "../../widgets/Hamburguer"
+import { useState, useEffect } from "react"
+import { Navbar } from "@/app/_components/widgets/Navbar/Index";
+import { HeaderData } from "./Header.types";
+import LinkNavBar from "@/components/ui/LinksNavBar"
+
 export function Header() {
     const [openMobileMenu, setOpenMobileMenu] = useState(false);
 
- 
+    useEffect(() => {
+        if (openMobileMenu) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'auto';
+        }
+        return () => {
+            document.body.style.overflow = 'auto';
+        };
+    }, [openMobileMenu]);
+
     return (
-        <div className="px-auto py-5 bg-black w-full">
-            <div className="flex items-center justify-between px-5 sm:px-8">
+        <header className="px-auto py-5 bg-black w-full fixed md:block z-10">
+            <div className="flex items-center justify-between px-5 sm:px-8 z-50">
                 <Link href={"/"}>
                     <Image 
                         src={Logo} 
@@ -42,10 +54,21 @@ export function Header() {
 
 
                 {/*responsive navbar*/}
-                <div className="flex sm:hidden">
-                  <Hamburguer/>
+                <div className="flex sm:hidden z-40 focus-within:"
+                onClick={() => setOpenMobileMenu(!openMobileMenu)} >
+                  <Hamburguer />
                 </div>
+
+                
+                <nav className={`z-10 mt-[70px] w-full h-[100vh] items-center gap-5 ${openMobileMenu ? 'absolute top-0 left-0 right-0 bg-black bg-opacity-50 backdrop-blur-md transition-all duration-300 ease-in-out' : 'hidden'}`}>
+                    
+                    <LinkNavBar 
+                        menuItems={dataHeader.map(({ name, link }) => ({ text: name, href: link }))}
+                    />
+                </nav>
+                
+                
             </div>
-        </div>
+        </header>
     )
 }

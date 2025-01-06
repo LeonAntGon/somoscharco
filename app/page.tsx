@@ -1,4 +1,3 @@
-import { Brands } from "./_components/ui/brands";
 import { Header } from "./_components/blocs/Header/Header";
 import HeroSection from "./_components/blocs/HeroSection";
 import Somos from "./_components/blocs/Somos";

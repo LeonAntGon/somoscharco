@@ -7,8 +7,8 @@ import Link from 'next/link';
 
 const HeroSection: React.FC = () => {
     return (
-        <div className="flex h-auto min-h-[90vh] pb-[10vh] bg-[#000814] flex-col md:flex-row items-center flex-wrap md:justify-around
-        px-6"
+        <section className="flex h-auto min-h-[90vh] pb-[10vh] bg-[#000814] flex-col md:flex-row items-center flex-wrap md:justify-around
+        px-6 pt-20 md:pt-0"
         style={{
             maskImage: 'linear-gradient(black 99%, transparent)'
         }}>
@@ -39,7 +39,7 @@ const HeroSection: React.FC = () => {
             <div className="">
                 <HeroVideo/>
             </div>
-        </div>
+        </section>
     );
 };
 
