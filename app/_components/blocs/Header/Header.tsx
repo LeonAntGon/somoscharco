@@ -24,7 +24,7 @@ export function Header() {
     }, [openMobileMenu]);
 
     return (
-        <header className="px-auto py-5 bg-black w-full fixed md:block z-10">
+        <header className="px-auto py-5 bg-black w-full z-10">
             <div className="flex items-center justify-between px-5 sm:px-8 z-50">
                 <Link href={"/"}>
                     <Image 
