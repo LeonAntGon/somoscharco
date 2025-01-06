@@ -6,16 +6,16 @@ import styled from 'styled-components';
 const CardXp = () => {
   return (
     <StyledWrapper>
-      <div className="outer">
+      <div className="outer mx-auto mt-10">
         <div className="dot" />
         <div className="card">
           <div className="ray" />
-          <div><p className='text-sm font-semibold'>Más de</p></div>
+          {/*<div><p className='text-xs font-semibold'>Más de</p></div>*/}
             <p className="inline whitespace-pre-wrap text text-2xl font-medium tracking-tighter text-white mx-2">
                 +<NumberTicker value={30} />
             </p>
             
-            <p className='text-sm font-semibold'><span className='text-xs'> años</span> en el mercado</p>
+            <p className='text-[0.60rem] font-semibold'><span className='text-[0.60rem]'> años</span> en el mercado</p>
           <div className="line topl" />
           <div className="line leftl" />
           <div className="line bottoml" />
@@ -29,7 +29,7 @@ const CardXp = () => {
 const StyledWrapper = styled.div`
   .outer {
     width: 160px;
-    height: 120px;
+    height: 80px;
     border-radius: 10px;
     padding: 1px;
     background: radial-gradient(circle 230px at 0% 0%, #ffffff, #0c0d0d);
@@ -86,7 +86,7 @@ const StyledWrapper = styled.div`
   }
   .ray {
     width: 160px;
-    height: 45px;
+    height: 40px;
     border-radius: 100px;
     position: absolute;
     background-color: #c7c7c7;
@@ -96,7 +96,7 @@ const StyledWrapper = styled.div`
     transform-origin: 10%;
     top: 0%;
     left: 0;
-    transform: rotate(40deg);
+    transform: rotate(20deg);
   }
 
   .card .text {

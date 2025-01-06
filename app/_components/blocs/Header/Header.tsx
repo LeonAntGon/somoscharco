@@ -21,7 +21,7 @@ export function Header() {
                         width={120} 
                         height={150} 
                         alt="Somos Chaco Logo" 
-                        className="w-1/2 md:w-3/4 lg:w-full" 
+                        className="w-full md:w-3/4 lg:w-[200px]" 
                     />
                 </Link>
 

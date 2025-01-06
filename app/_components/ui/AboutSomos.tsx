@@ -17,7 +17,7 @@ const AboutSomos: React.FC = () => {
   return (
     <div
       ref={ref}
-      className=" mt-[-70vh] md:mt-[-60vh] h-[90vh] overflow-hidden"
+      className=" mt-[-75vh] md:mt-[-70vh] h-[90vh] overflow-hidden"
       style={{
         backgroundImage: `url(${bgWaves.src})`,
         backgroundSize: 'cover',
@@ -28,7 +28,7 @@ const AboutSomos: React.FC = () => {
         className='pt-[30vh] px-[40px] md:px-[140px]'
         initial={{ x: '-30vh', opacity: 0 }}
         animate={{ x: isInView ? 0 : '-30vh', opacity: isInView ? 1 : 0 }}
-        transition={{ duration: 3 }}
+        transition={{ duration: 2 }}
       >
         <p className='text-white text-center text-md'>
           Somos tres generaciones de publicitarios, con mas de 30 años de experiencia en el mercado,
@@ -39,7 +39,7 @@ const AboutSomos: React.FC = () => {
         className='mt-[5vh] px-[40px] md:px-[130px]'
         initial={{ x: '30vh', opacity: 0 }}
         animate={{ x: isInView ? 0 : '30vh', opacity: isInView ? 1 : 0 }}
-        transition={{ duration: 2, delay: 2 }}
+        transition={{ duration: 2, delay: 1.4 }}
       >
         <p className='text-white text-center'>
           Charco evoca la idea de detenerse, reflexionar y luego dar un salto, simbolizando el

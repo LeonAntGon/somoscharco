@@ -36,14 +36,14 @@ export function Navbar( props: NavbarProps) {
                 >
                     <div className="items-center  gap-5 sm:flex">
                         {dataHeader.map(({ id, name, link}) =>(
-                            <Link key={id} href={link} className="hover:text-secondary hover:border-b-[1px] hover:border-secondary">{name}</Link>
+                            <Link key={id} href={link} className="hover:text-[#0e4597] hover:border-b-[1px] hover:border-[#0e4597] transition duration-300">{name}</Link>
                         ))}
                     </div>
                 </motion.nav>
             ) : (
                 <div className={`${openMobileMenu ? 'absolute z-[1] left-0 top-20 bg-black r-0 w-full px-4 py-4' : 'hidden'} gap-5 sm:flex`}>
                 {dataHeader.map(({id, name, link}) => (
-                    <Link key={id} href={link} className="text-white font-semibold block hover:text-secondary hover:border-b-[1px]">{name}</Link>
+                    <Link key={id} href={link} className="font-bold text-white hover:text-[#0e4597] block hover:text-secondary hover:border-b-[1px] hover:border-[#0e4597] transition duration-300">{name}</Link>
                 ))}
             </div>
             )}
