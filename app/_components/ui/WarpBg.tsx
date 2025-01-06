@@ -10,11 +10,11 @@ export default function WarpBg() {
   return (
     <div className="bg-black w-full py-6 px-8 my-6 rounded-lg shadow-lg">
         <WarpBackground>
-        <Card className="min-w-[340px] max-w-[400px] mx-auto">
+        <Card className="max-w-[400px] mx-auto">
 
             <CardContent className="px-2">
             <CardTitle className="text-center my-auto py-4 ">Nos encantan los nuevos desafíos,
-                <br></br> queremos escucharte</CardTitle>
+                <br className=" hidden md:block"></br> queremos escucharte</CardTitle>
             
             </CardContent>
         </Card>
