@@ -55,7 +55,7 @@ export function Header() {
                 {/*responsive navbar*/}
                 <div className="flex sm:hidden z-40 focus-within:"
                 onClick={() => setOpenMobileMenu(!openMobileMenu)} >
-                  <Hamburguer />
+                  <Hamburguer crossed={openMobileMenu} setCrossedState={setOpenMobileMenu} />
                 </div>
 
                 
