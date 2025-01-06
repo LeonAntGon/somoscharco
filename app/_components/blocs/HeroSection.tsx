@@ -25,9 +25,11 @@ const HeroSection: React.FC = () => {
                 
                 <h3 className='text-gray-300 max-w-2xl my-6 text-md'>Potenciamos tu marca con estrategias innovadoras y experiencias memorables <br className='md:block hidden'></br>que conectan con tu audiencia.</h3>
                 
+                <div className='flex content-end pr-4'>
                 <Link href={'#contacto'}>
                 <ButtonCta/>
                 </Link>
+                </div>
                 
 
                 

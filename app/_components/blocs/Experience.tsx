@@ -5,7 +5,7 @@ import GradualSpacingDelayed from '@/components/ui/magicUi/gradual-spacing-delay
 
 function Experience() {
   return (
-    <section className='mt-[120px]' id='experiencia'>
+    <section className='mt-[120px] overflow-hidden' id='experiencia'>
       <GradualSpacing
         className="md:hidden text-center text-xs sm:text-md font-bold -tracking-widest text-black dark:text-white md:text-2xl"
         text="Tres generaciones de experiencia"
