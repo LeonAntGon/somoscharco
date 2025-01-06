@@ -59,7 +59,7 @@ export default function ContactoComponent() {
           <div className="opacity-100 x-0">
             <Card className="h-full bg-white">
               <CardHeader>
-                <CardTitle className="text-2xl text-black">Envíenos un Mensaje</CardTitle>
+                <CardTitle className="text-2xl text-black" id="contacto">Envíenos un Mensaje</CardTitle>
               </CardHeader>
               <CardContent>
                 <form onSubmit={handleSubmit} className="space-y-4">

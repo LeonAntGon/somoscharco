@@ -13,7 +13,7 @@ interface GradualSpacingProps {
   className?: string;
 }
 
-export default function GradualSpacing({
+export default function GradualSpacingDelayed({
   text,
   duration = 0.7,
   delayMultiple = 0.04,
@@ -35,7 +35,7 @@ export default function GradualSpacing({
             animate={inView ? "visible" : "hidden"}
             exit="hidden"
             variants={framerProps}
-            transition={{ duration, delay: i * delayMultiple }}
+            transition={{ duration, delay: 0.7 + i * delayMultiple }}
             className={cn("", className)}
           >
             {char === "" ? <span>&nbsp;</span> : char}
