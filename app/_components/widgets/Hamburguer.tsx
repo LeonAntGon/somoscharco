@@ -1,8 +1,12 @@
 'use client'
 import { motion } from 'framer-motion'
 
-//just move open/close state to parent component
-export default function Hamburguer({ crossed, setCrossedState }) {
+interface HamburguerProps {
+  crossed: boolean;
+  setCrossedState: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+export default function Hamburguer({ crossed, setCrossedState }: HamburguerProps) {
   return (
     <button
       aria-expanded={crossed}
